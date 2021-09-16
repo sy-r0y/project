@@ -804,18 +804,59 @@ print(utility.find_max(file_list))  # use module **utility**
 
 print(module1.kg_to_pound(70))  # use module **module1**
 '''
-
+'''
 
 #   PACKAGES -- another way to ORGANIZE the code/project
 #   PACKAGES used to organize all the files/modules
 #   PACKAGES are like a *directory/folder*
 #   PACKAGE contains a particular type of module/s
+#   PACKAGE is a container for related modules
 
-import shipping.costing
-
-import transporting.transportaion_cost
+#   PACKAGES are used in Django as well
 
 
+#import shippingcost.costing
+#from shippingcost.costing import shipping_cost
+
+#import transportationcost.costing
+#from transportationcost.costing import transport_cost
+
+#from shippingcost import costingtoship
+#from transportationcost import costtotransport
+
+
+#from shippingcost import costingtoship
+#from transportationcost import costtotransport
+
+#costingtoship.shipping_cost()
+#costtotransport.transport_cost()
+
+
+from shippingcost import costingtoship, secondmodule
+from transportationcost import anothermodule, costtotransport
+
+
+costtotransport.transport_cost()
+costingtoship.shipping_cost()
+
+secondmodule.some_func()
+anothermodule.another_func()
+
+
+
+'''
+
+#   PYTHON has many built in modules
+
+#   PYTHON has a standard library, which have lots of modules for common tasks(emails, random values, date-time etc)
+
+#  PYTHON has a standard library
+
+import random
+
+print(random.random())
+
+print(random.getstate())
 
 
 
